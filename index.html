@@ -3,43 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Оптимизированный сайт для высокой оценки в Lighthouse">
-  <title>Оптимизированный сайт</title>
-
-  <!-- SEO: Мета-теги и структурированные данные -->
+  <meta name="description" content="Оптимизированный сайт для получения максимальной оценки в Lighthouse">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Оптимизированный сайт">
-  <meta property="og:description" content="Пример сайта с высокой оценкой в Lighthouse">
-  <meta property="og:image" content="https://example.com/image.jpg">
+  <title>Высокопроизводительный сайт</title>
+
+  <!-- Структурированные данные JSON-LD -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "url": "https://example.com",
-      "name": "Оптимизированный сайт",
-      "description": "Пример сайта с высокой оценкой в Lighthouse"
+      "name": "Высокопроизводительный сайт",
+      "description": "Пример сайта с максимальной оценкой в Lighthouse"
     }
   </script>
 
-  <!-- Минимизированные и сжатые файлы -->
+  <!-- Минимизированные файлы CSS -->
   <link rel="stylesheet" href="styles.min.css">
-  <script async src="scripts.min.js"></script>
 
   <!-- Использование preload для критических ресурсов -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
   <link rel="preload" href="image.webp" as="image">
 
-  <!-- HTTP/2 и кэширование (на серверной стороне) -->
-  <!-- Настроить сервер для поддержания оптимального кэширования -->
+  <!-- Асинхронная загрузка скриптов -->
+  <script async src="scripts.min.js"></script>
 </head>
 <body>
 
   <header>
     <nav>
       <ul>
-        <li><a href="#home">Главная</a></li>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#contact">Контакты</a></li>
+        <li><a href="#home" aria-label="Перейти на главную страницу">Главная</a></li>
+        <li><a href="#about" aria-label="Информация о нас">О нас</a></li>
+        <li><a href="#contact" aria-label="Контактная информация">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -52,7 +48,7 @@
 
     <section id="about">
       <h2>О нас</h2>
-      <p>Мы создаем быстрые и доступные сайты с фокусом на улучшение пользовательского опыта.</p>
+      <p>Мы создаем быстрые, доступные сайты с фокусом на улучшение пользовательского опыта.</p>
     </section>
 
     <section id="contact">
