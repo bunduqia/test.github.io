@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Идеальный сайт с максимальными показателями Lighthouse в 2025 году">
+    <meta name="keywords" content="идеальный сайт, Lighthouse, 100 баллов, оптимизация">
+    <meta name="author" content="Ваше Имя">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="canonical" href="https://test.github.io/">
+    <!-- Фавиконки -->
+    <link rel="icon" type="image/svg+xml" href="https://example.com/favicon.svg">
+    <link rel="alternate icon" href="https://example.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://example.com/apple-touch-icon.png">
+    <link rel="manifest" href="https://example.com/site.webmanifest">
     <title>Идеальный сайт 2025</title>
-    <!-- Минифицированный критический CSS -->
-    <style>
-        body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;margin:0;padding:0;background-color:#f0f0f0;color:#333}header,main,footer{padding:20px;text-align:center}header{background-color:#4CAF50;color:#fff}footer{background-color:#333;color:#fff;position:fixed;bottom:0;width:100%}
-    </style>
+    <!-- Подключение минифицированного CSS -->
+    <link rel="stylesheet" href="style.css">
     <!-- Предзагрузка шрифтов (если используются) -->
-    <link rel="preload" href="fonts/your-font.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"></noscript>
+    <!-- Предзагрузка критических ресурсов -->
+    <link rel="preload" href="https://example.com/image.avif" as="image">
 </head>
 <body>
     <header>
@@ -19,16 +31,14 @@
     <main>
         <p>Этот сайт создан для демонстрации идеальных показателей в Lighthouse.</p>
         <!-- Оптимизированное изображение в формате AVIF -->
-        <img src="image.avif" alt="Описание изображения" loading="lazy" width="600" height="400">
+        <img src="https://example.com/image.avif" alt="Описание изображения" loading="lazy" width="600" height="400" style="max-width: 100%; height: auto;">
         <!-- Кнопка с ARIA-атрибутом для доступности -->
         <button aria-label="Пример кнопки">Нажми меня</button>
     </main>
     <footer>
         <p>&copy; 2025 Идеальный сайт</p>
     </footer>
-    <!-- Минифицированный JavaScript -->
-    <script>
-        !function(){document.querySelector("button").addEventListener("click",function(){alert("Кнопка нажата!")})}();
-    </script>
+    <!-- Подключение минифицированного JavaScript -->
+    <script src="script.js" defer></script>
 </body>
 </html>
