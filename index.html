@@ -3,23 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Оптимизированный сайт с высокой оценкой в Lighthouse">
+  <meta name="description" content="Оптимизированный сайт для высокой оценки в Lighthouse">
   <title>Оптимизированный сайт</title>
 
-  <!-- SEO: Мета-теги для улучшения видимости в поисковиках -->
+  <!-- SEO: Мета-теги и структурированные данные -->
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="Оптимизированный сайт">
   <meta property="og:description" content="Пример сайта с высокой оценкой в Lighthouse">
   <meta property="og:image" content="https://example.com/image.jpg">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://example.com",
+      "name": "Оптимизированный сайт",
+      "description": "Пример сайта с высокой оценкой в Lighthouse"
+    }
+  </script>
 
-  <!-- Использование минимизированного и сжатого CSS -->
+  <!-- Минимизированные и сжатые файлы -->
   <link rel="stylesheet" href="styles.min.css">
-
-  <!-- Использование асинхронных скриптов -->
   <script async src="scripts.min.js"></script>
 
-  <!-- Включение ресурсов через CDN для повышения производительности -->
+  <!-- Использование preload для критических ресурсов -->
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style">
+  <link rel="preload" href="image.webp" as="image">
+
+  <!-- HTTP/2 и кэширование (на серверной стороне) -->
+  <!-- Настроить сервер для поддержания оптимального кэширования -->
 </head>
 <body>
 
@@ -55,7 +66,7 @@
   </footer>
 
   <!-- Картинки загружаются по мере прокрутки (lazy loading) -->
-  <img src="image.jpg" alt="Пример изображения" loading="lazy">
+  <img src="image.webp" alt="Пример изображения" loading="lazy">
 
 </body>
 </html>
